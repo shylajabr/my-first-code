@@ -1,0 +1,142 @@
+* {
+  background-color: lightskyblue !important;
+}
+.btn {
+  justify-content: left;
+  position: relative;
+  left: 15px;
+  align-items: center;
+  display: flex;
+}
+button {
+  border: 3px solid white;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  border: bold;
+  margin-top: 20px;
+}
+
+#p2 {
+  text-align: center;
+  color: white;
+  position: relative;
+  bottom: -15px;
+  text-transform: uppercase;
+}
+
+.icon {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  position: relative;
+  margin-bottom: 10px;
+}
+.icon i {
+  font-size: 100px;
+}
+.degree {
+  text-align: center;
+  font-size: 50px;
+  color: whitesmoke;
+  margin-bottom: 41px;
+}
+
+.fa-cloud {
+  border: thin;
+  color: #f2f6f5;
+  text-align: center;
+  font-size: 80px;
+}
+.stools {
+  text-align: left;
+  line-height: 25px;
+  position: relative;
+  padding-top: 20px;
+  color: #f2f6f5;
+  font-size: 20px;
+  left: 30px;
+}
+.col-3 {
+  text-align: center;
+  position: relative;
+  left: 38px;
+
+  line-height: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding: 30px;
+  width: 90px;
+  height: 70px;
+  display: inline-block;
+
+  border: 2px solid white;
+}
+
+.fa-sun {
+  color: gold;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+input {
+  border: 1px solid #0d335d;
+}
+.fa-compass {
+  font-size: 70px;
+  color: white;
+  position: relative;
+  top: 50px;
+  right: 120px;
+}
+.compass {
+  column-span: all;
+}
+.col-sm-2 {
+  column-span: all;
+  color: #f2f6f5;
+  font-size: 15px;
+  text-align: center;
+}
+
+.form {
+  position: relative;
+  right: -5px;
+  top: 05px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #f2f6f5;
+
+  -webkit-text-fill-color: #f2f6f5;
+}
+
+.form-btn {
+  position: relative !important;
+  right: 170px;
+  top: 07px;
+  color: #f2f6f5;
+  width: 80%;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 5px;
+  padding-bottom: -1px;
+  border-color: solid #0d335d;
+  border: bold;
+}
+#p2 {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  bottom: -15px;
+}
+.units {
+  position: relative;
+  top: -20px;
+  font-size: 20px;
+}
