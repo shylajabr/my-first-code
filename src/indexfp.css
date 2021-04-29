@@ -36,13 +36,23 @@ button {
 .icon i {
   font-size: 100px;
 }
-.degree {
-  text-align: center;
-  font-size: 50px;
-  color: whitesmoke;
-  margin-bottom: 41px;
-}
 
+#temp {
+  font-size: 50px;
+  position: relative;
+  text-align: center;
+  color: whitesmoke;
+  left: 200px;
+  width: 100%;
+}
+#c {
+  position: relative;
+  left: 200px;
+}
+#f {
+  position: relative;
+  left: 200px;
+}
 .fa-cloud {
   border: thin;
   color: #f2f6f5;
@@ -117,7 +127,7 @@ input {
 
 .form-btn {
   position: relative !important;
-  right: 170px;
+  right: 450px;
   top: 07px;
   color: #f2f6f5;
   width: 80%;
@@ -128,15 +138,23 @@ input {
   border-color: solid #0d335d;
   border: bold;
 }
-#p2 {
+#p1 {
   text-align: center;
   font-size: 20px;
   color: white;
   position: relative;
   bottom: -15px;
 }
+
 .units {
   position: relative;
   top: -20px;
-  font-size: 20px;
+  font-size: 20;
+  text-align: center;
+  left: 450px;
+}
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
 }
