@@ -42,16 +42,16 @@ button {
   position: relative;
   text-align: center;
   color: whitesmoke;
-  left: 200px;
+  left: 700px;
   width: 100%;
 }
 #c {
   position: relative;
-  left: 200px;
+  left: -18px;
 }
 #f {
   position: relative;
-  left: 200px;
+  left: -18px;
 }
 .fa-cloud {
   border: thin;
@@ -99,7 +99,7 @@ input {
   color: white;
   position: relative;
   top: 50px;
-  right: 120px;
+  right: 80px;
 }
 .compass {
   column-span: all;
@@ -151,7 +151,7 @@ input {
   top: -20px;
   font-size: 20;
   text-align: center;
-  left: 450px;
+  right: -750px;
 }
 .btn-success {
   color: #fff;

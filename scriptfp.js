@@ -1,30 +1,27 @@
-let today = new Date();
+function formatDate(date) {
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 
-function formatDate(day) {
+  let dayIndex = date.getDay();
   let days = [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
-    "Sunday",
   ];
-  let hour = today.getHours();
-  if (hour < 10) {
-    hour = `0${hour}`;
-  }
-  let min = today.getMinutes();
-  if (min < 10) {
-    min = `0${min}`;
-  }
-  let date = today.getDate() + " " + days[today.getDay()];
-  let time = `${hour}:${min}`;
-  let datetime = date + "[" + time + "]";
-  document.getElementById("#p1").innerHTML = `${datetime}`;
-}
+  let day = days[dayIndex];
 
-formatDate(today);
+  return `${day} ${hours}:${minutes}`;
+}
 
 function displayWeatherCondition(response) {
   document.querySelector("#p2").innerHTML = response.data.name;
@@ -64,33 +61,30 @@ function convertToCelsius(event) {
 }
 let searchForm = document.querySelector(".weather-search-form");
 searchForm.addEventListener("submit", handleSubmit);
-let today = new Date();
+function formatDate(date) {
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 
-function formatDate(day) {
+  let dayIndex = date.getDay();
   let days = [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
-    "Sunday",
   ];
-  let hour = today.getHours();
-  if (hour < 10) {
-    hour = `0${hour}`;
-  }
-  let min = today.getMinutes();
-  if (min < 10) {
-    min = `0${min}`;
-  }
-  let date = today.getDate() + " " + days[today.getDay()];
-  let time = `${hour}:${min}`;
-  let datetime = date + "[" + time + "]";
-  document.getElementById("#p1").innerHTML = `${datetime}`;
-}
+  let day = days[dayIndex];
 
-formatDate(today);
+  return `${day} ${hours}:${minutes}`;
+}
 
 function displayWeatherCondition(response) {
   document.querySelector("#p2").innerHTML = response.data.name;
