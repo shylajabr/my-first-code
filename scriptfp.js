@@ -61,3 +61,6 @@ function convertToCelsius(event) {
 }
 let searchForm = document.querySelector(".weather-search-form");
 searchForm.addEventListener("submit", handleSubmit);
+let dateElement = document.querySelector("#p1");
+let currentTime = new Date();
+dateElement.innerHTML = formatDate(currentTime);
