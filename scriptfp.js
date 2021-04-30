@@ -47,7 +47,10 @@ function searchLocation(position) {
 
   axios.get(apiUrl).then(displayWeatherCondition);
 }
-
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temp");
@@ -64,3 +67,6 @@ searchForm.addEventListener("submit", handleSubmit);
 let dateElement = document.querySelector("#p1");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
+
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
